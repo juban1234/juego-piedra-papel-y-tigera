@@ -3,13 +3,12 @@ function piedra() {
    let piedra = 0;
    let resultado = CPU();
    if (piedra == resultado) {
-    console.log("Empate");
+    console.log("Empate"+"player saco piedra , cpu saco piedra");
    }   else if (piedra == 0 && resultado == 1) {
-    console.log("perdiste");
+    console.log("perdiste"+"player saco piedra , cpu saco papel");
    }else if (piedra == 0 && resultado == 2) {
-    console.log("Ganaste");
+    console.log("Ganaste"+"player saco piedra , cpu saco tigera");
    }
-   console.log("cpu: " + resultado +" piedra: " + piedra);
 }
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -21,13 +20,12 @@ function papel() {
     let papel = 1;
     let resultado = CPU();
     if (papel == resultado) {
-     console.log("Empate");
+     console.log("Empate"+"player saco papel , cpu saco papel");
     }   else if (papel == 1 && resultado == 2) {
-     console.log("perdiste");
+     console.log("perdiste"+"player saco papel , cpu saco tigera");
     }else if (papel == 1 && resultado == 0) {
-     console.log("Ganaste");
+     console.log("Ganaste"+"player saco papel , cpu saco piedra");
     }
-    console.log("cpu: " + resultado +" papel: " + papel);
 }
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -39,13 +37,12 @@ function tigera() {
     let tigera = 2;
     let resultado = CPU();
     if (tigera == resultado) {
-     console.log("Empate");
+     console.log("Empate"+"player saco tigera , cpu saco tigera");
     }   else if (tigera == 2 && resultado == 0) {
-     console.log("perdiste");
+     console.log("perdiste"+"player saco tigera , cpu saco piedra");
     }else if (tigera == 2 && resultado == 1) {
-     console.log("Ganaste");
+     console.log("Ganaste"+"player saco tigera , cpu saco papel");
     }
-    console.log("cpu: " + resultado +" piedra: " + tigera);
 }
 
 document.addEventListener('DOMContentLoaded', function() {
