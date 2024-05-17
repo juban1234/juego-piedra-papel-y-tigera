@@ -55,3 +55,15 @@ h1{
 #derrotas{
     color: #ffffff;
 }
+
+footer{
+    display: flex;
+    align-items: flex-end;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: rgb(62, 241, 241);
+    padding: 10px;
+    border-radius: 10px;
+    margin: 50px 0px;
+}
