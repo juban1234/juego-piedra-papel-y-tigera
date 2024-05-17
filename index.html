@@ -9,11 +9,13 @@
 <body>
     <div class="colorPagina">
         <h1>juego de piedra, papel, o tigera</h1>
-    <button id="piedra"><img src="archivos/imagenes/Rock.jpeg" alt="piedra" id="img"></button>
-    <button id="papel"><img src="archivos/imagenes/Paper.jpeg" alt="papel" id="img"></button>
-    <button id="tigera"><img src="archivos/imagenes/Scissors.jpeg" alt="tigera" id="img"></button>
+    <button id="piedra" onclick="piedra()" ><img src="archivos/imagenes/Rock.jpeg" alt="piedra" id="img"></button>
+    <button id="papel" onclick="papel()"><img src="archivos/imagenes/Paper.jpeg" alt="papel" id="img"></button>
+    <button id="tigera" onclick="tigera()" ><img src="archivos/imagenes/Scissors.jpeg" alt="tigera" id="img"></button>
     </div>
     <p id="resultado"></p>
+    <p id="victorias">Victorias: 0</p>
+    <p id="derrotas">Derrotas: 0</p>
     <script src="js/app.js"></script>
 </body>
 </html>
