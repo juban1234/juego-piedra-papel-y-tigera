@@ -67,10 +67,10 @@ function actualizarContadores() {
 }
 
 function verificarGanador() {
-    if (victorias >= 3) {
+    if (victorias == 3) {
         alert("¡Felicidades, has ganado!");
         reiniciarJuego();
-    } else if (derrotas >= 3) {
+    } else if (derrotas == 3) {
         alert("Lo siento, has perdido.");
         reiniciarJuego();
     }
